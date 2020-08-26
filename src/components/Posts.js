@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Post from './Post';
 
 function Posts() {
 
@@ -14,10 +15,7 @@ function Posts() {
         <div className="d-flex justify-content-center">
             <div className="w-75">
                 {posts.map(post => (
-                    <div>
-                        <h4>{post.title}</h4>
-                        <p>{post.body}</p>
-                    </div>
+                    <Post title={post.title} body={post.body} />
                 ))}
             </div>
         </div>
