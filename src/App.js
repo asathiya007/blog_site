@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
+import Posts from './components/Posts';
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
 
   const showContent = () => {
     if (mode === "user") {
-      return <div>User - can view posts</div>; 
+      return <Posts />; 
     } 
     return <div>Admin - can view and make posts</div>; 
   }
