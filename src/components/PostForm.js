@@ -16,9 +16,9 @@ function PostForm() {
     const onSubmit = (e) => {
         e.preventDefault(); 
         if (formData.password === "hackgteeny") {
-            fetch('https://jsonplaceholder.typicode.com/posts', {
+            fetch('http://localhost:5000/posts', {
                 method: 'POST',
-                headers: {"Content-type": "application/json"},
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(formData)
             })
                 .then(res => res.json())
