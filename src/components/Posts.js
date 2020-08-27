@@ -4,7 +4,7 @@ import Post from './Post';
 function Posts() {
 
     useEffect(() => {
-        fetch('http://localhost:5000/posts')
+        fetch('https://blogsite-api-hackgteeny.herokuapp.com/posts')
             .then(res => res.json())
             .then(data => setPosts(data));
     }, []); 

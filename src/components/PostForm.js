@@ -16,7 +16,7 @@ function PostForm() {
     const onSubmit = (e) => {
         e.preventDefault(); 
         if (formData.password === "hackgteeny") {
-            fetch('http://localhost:5000/posts', {
+            fetch('https://blogsite-api-hackgteeny.herokuapp.com/posts', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(formData)
