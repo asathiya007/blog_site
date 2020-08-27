@@ -4,7 +4,7 @@ import Post from './Post';
 function Posts() {
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('http://localhost:5000/posts')
             .then(res => res.json())
             .then(data => setPosts(data));
     }, []); 
