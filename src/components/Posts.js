@@ -14,8 +14,8 @@ function Posts() {
     return (
         <div className="d-flex justify-content-center">
             <div className="w-75">
-                {posts.map(post => (
-                    <Post title={post.title} body={post.body} />
+                {posts.map((post, i) => (
+                    <Post title={post.title} body={post.body} key={i}/>
                 ))}
             </div>
         </div>

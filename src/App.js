@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import Posts from './components/Posts';
+import PostForm from './components/PostForm';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     if (mode === "user") {
       return <Posts />; 
     } 
-    return <div>Admin - can view and make posts</div>; 
+    return <PostForm />; 
   }
 
   return (
